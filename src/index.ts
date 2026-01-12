@@ -1,12 +1,12 @@
 import express from 'express'
-import authRouter from '@/routes/auth.route'
+import apiRouter from '@/routes/api.route'
 import { errorHandler } from '@/middlewares/error.middleware'
 import { env } from '@/env'
 
 const app = express()
 const PORT = 3000
 
-app.use('/api', authRouter)
+app.use('/api', apiRouter)
 
 app.use(errorHandler)
 

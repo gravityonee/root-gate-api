@@ -10,8 +10,9 @@
     "db:seed": "bun run src/db/seed.ts"
   },
   "devDependencies": {
-    "@types/express": "^5.0.6",
+    "@types/bcrypt": "^6.0.0",
     "@types/bun": "latest",
+    "@types/express": "^5.0.6",
     "@types/pg": "^8.16.0",
     "drizzle-kit": "^0.31.8"
   },
@@ -19,6 +20,7 @@
     "typescript": "^5"
   },
   "dependencies": {
+    "bcrypt": "^6.0.0",
     "dotenv": "^17.2.3",
     "drizzle-orm": "^0.45.1",
     "express": "^5.2.1",

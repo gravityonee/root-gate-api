@@ -13,7 +13,7 @@ export const users = pgTable('users', {
     .default(sql`gen_random_uuid()`)
     .primaryKey(),
 
-  name: varchar('username', { length: 100 }).notNull().unique(),
+  username: varchar('username', { length: 100 }).notNull().unique(),
   password: varchar('password', { length: 255 }).notNull(),
   role: varchar('role', { length: 20 }).notNull().default('admin'),
   createdAt: timestamp('created_at').defaultNow(),
